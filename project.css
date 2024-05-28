@@ -1,0 +1,377 @@
+/* .flex{
+    position: sticky;
+    top: 0;
+} */
+.boxes{
+    background-color: #ef8b7b;
+    padding-left:  1000px;
+    height: 60px;
+}
+.titre{
+    background-color: #ef8b7b;
+    text-align: center;
+    font-size: 40px;
+    color:white ;
+}
+.titre1{
+    font-size: 60px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: black;
+    text-shadow: 2px 3px 2px palevioletred ;
+    
+
+}
+.texte{
+    font-size: 25px;
+}
+.container{
+    display: flex;
+    background-color: #ef8b7b;
+   
+}
+a{
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu ul li{
+    display: inline;
+    padding-left: 30px ;
+
+   
+}
+.menu ul{
+    flex-basis: 100px;
+   
+}
+
+
+.menu a:hover{
+    text-decoration: underline;
+    color: black;
+    
+}
+.shop{
+    padding-top: 16px; 
+    padding-left: 5px; ;
+}
+.logos{
+    padding-left:600px ;
+    padding-top: 16px; ;
+}
+.image img {
+   width: 400px;
+   height: 400px;
+   padding-left: 500px;
+   animation-duration: 2s ;
+   animation-name: animate;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   
+}
+.info{
+    
+    
+    position: relative;
+    top: 50px;
+    left: 60px;
+    line-height: 30px;
+    
+   
+}
+.titre1{
+    font-size: 30px;
+}
+.texte{
+    font-size: 25px;
+}
+.page{
+    display: flex;
+}
+@keyframes animate{
+    50%{
+        transform: translateY(20px);
+    }
+    
+}
+button{
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background:linear-gradient(#f1e6e2, rgb(239,139,123));
+    
+    color: white;
+}
+button:hover{
+    width: 150px;
+    height: 60px;
+    background:linear-gradient(#f683f8, rgb(233, 136, 206));
+    color: black;
+}
+img{
+    width: 200px;
+    height: 250px;
+}
+.robes{
+    background:linear-gradient(#f683f8, rgb(233, 136, 206));
+    height: 650px;
+    
+}
+.robes img{
+    width: 250px;
+    height: 300px;
+    border-radius: 60px 70px 40px 140px;  
+    box-shadow: 5px  5px 5px 5px black;
+
+}
+.robes{
+    display: flex;
+    height: 700px;
+    background:linear-gradient(60deg, #f1e6e2,rgb(209, 139, 233));
+    flex-wrap: wrap;
+    margin-top: 95px;
+    box-shadow: 0px 0px 10px #ef8b7b,
+    0px 0px 10px #ef8b7b inset;
+    border: 2px solid rgb(209, 139, 233) ;
+    border-radius: 20px;
+        
+    
+}
+header{
+    background-color: white;
+    height: 500px;
+    
+}
+.robe1{
+    position: relative;
+    left: 480px;
+}
+.robe2{
+    position: relative;
+    bottom:180px; left: 300px;
+}
+.robe3{
+    position: relative;
+    bottom:320px; left: 450px;
+}
+.title{
+    font-size: 50px;
+
+}
+
+.gmail a{
+    color:black;
+}
+.email{
+    display: block;
+    line-height: 40px;
+    padding-top: 140px;
+    padding-left: 20px;
+}
+.position{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+#collection1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px;
+    
+}
+#collection2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px;
+}
+
+#collection3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px;
+}
+#collection4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px;
+}
+#collection5{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px;
+}
+#collection6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 400px;
+}
+.items1 img{
+    
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0px 0px 10px #ef8b7b
+    0px 0px 10px #ef8b7b inset;
+    border: 2px solid #ef8b7b ;
+    border-radius: 20px;
+}   
+.item1:hover{
+    transform: scale(1.1);
+    
+} 
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.but button:hover{
+    transform:scale(1.05);
+  }
+  .but button{
+    background: bisque;
+    width: 200px;
+    height: 40px;
+    color: black;
+    box-shadow: 0px 0px 10px #ef8b7b,
+    0px 0px 10px #ef8b7b inset;
+    border: 2px solid #ef8b7b ;
+    border-radius: 20px;
+}
+.box2{
+    color: rgb(209, 139, 233);
+    padding-top: 10px; padding-left: 30px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.box1{
+    padding-top: 10px; 
+    padding:2px; padding-left: 30px;
+   
+}
+
+@media screen and (max-width:500px){
+    .menu ul li{
+        flex-direction: column;
+    }  
+    
+
+}
+
+.page_noire{
+    background-color: black;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 30px;
+}
+.lesmarques{
+    background-color: white;
+    
+}
+.marque1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    
+    
+}
+.marque1 img{
+     border-radius: 150px;
+     width: 150px;
+     height: 150px;
+}
+
+.compte1{
+    
+    position: relative;
+    top: 85px;
+}
+.compte2{
+    
+    position: relative;
+    top: 100px;
+   
+}
+.compte3{
+    position: relative;
+    
+    top: 100px;
+}
+ @media  screen and (max-width:500px) {
+    .menu ul li{
+        flex-direction :column;
+    }
+    #collection1{
+       flex-direction: column;
+    }
+    #collection2{
+        flex-direction: column;
+    }
+    
+    #collection3{
+        flex-direction: column;
+    }
+    #collection4{
+        flex-direction: column;
+    }
+    #collection5{
+        flex-direction: column;
+    }
+    #collection6{
+        flex-direction: column;
+    }
+    
+    
+    .info{
+        flex-direction: column;
+    }
+}
+    
